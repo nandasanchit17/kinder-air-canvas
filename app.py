@@ -156,4 +156,5 @@ def xyz():
 def video():
     return Response(xyz(), mimetype='multipart/x-mixed-replace; boundary=frame')
 
-app.run(port='9000',debug=True)
+if __name__=='__main__':
+    app.run(debug=True)
